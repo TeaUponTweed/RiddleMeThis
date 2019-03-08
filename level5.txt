@@ -1,0 +1,36 @@
+Q: One train runs from A to B at 105 miles per hour, the other runs from B to A at 85 miles per hour. How far apart were the two trains 30 minutes prior to their crossing?
+A: 95 miles
+Q: Mr Smith and Mrs Smith have 3 sons. Each son has a sister. How many members are in the family?
+A: Six
+Q: What does the following sequence represent? 2, 3, 5, 7, 11, 13, 17, 19
+A: Prime numbers
+Q: Five years ago, Dave was three times as old as his sister, now he is only twice as old. How old is Dave now?
+A: 20
+Q: There is only one other word that can be made from all the letters in the word permissive. Can you figure out what that other word is?
+A: Impressive
+Q: She sells sea shells on the sea shore, how many of the letter "s" is in that?
+A: 0 there is no letter "s" in that
+Q: Susan didn't like to tell her age, so when she was asked, her mother would answer for her. Her mother said, I'm just seven times as old as she is now. In twenty years, she'll be just half the age that I will be then. How old is Susan?
+A: Four - she will be 24 in twenty years time
+Q: What is the next number in the following sequence? l, 5, 1 7, 53... 
+A: 161 each number in the sequence is 3x the difference between it and the previous number.
+Q: What is the minimum amount of cuts needed to a calce to make eight equal slices?
+A: Three
+Q: A train one mile long, travelling at one mile per minute, enters a mile-long tunnel. How long does it take to go through the tunnel?
+A: Two minutes
+Q: Four people shake hands with each other only once. How many handshakes occurred?
+A: Six
+Q: In a family, each son has just as many brothers as sisters, but each daughter has twice as many brothers as sisters, how many boys and girls are there in total?
+A: Seven
+Q: How many squares are there on a chessboard?
+A: 204
+Q: If two hours ago, it was as long after one o'clock in the afternoon as it was before one o'clock in the morning, what time would it be now?
+A: 9pm
+Q: If someone was born on August 1, 25 BC, then died on August 1, 25 AD, how old were they when they died?
+A: 49
+Q: What is the only six-letter English word where the letters are in alphabetical order?
+A: Almost
+Q: You may enter, but you may not come in, I have space, but no room. I have keys. but open no lock. What am l?
+A: A computer
+Q: Im a five-letter word, yet it sounds strange to say, six still remains when you take two letters away!
+A: Sixty
