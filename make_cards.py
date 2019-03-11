@@ -11,7 +11,8 @@ def main(question_files, card_backs):
     # print(question_files)
     # print(card_backs)
     card_number = 1
-    fnt = ImageFont.truetype('/Library/Fonts/Arial.ttf', 16)
+    wakka = 0
+    fnt = ImageFont.truetype('/Library/Fonts/Arial.ttf', 60)
     for (question_file, card_back) in zip(question_files, card_backs):
         print(f"proccessing {question_file} {card_back}")
         with open(question_file) as qfile:
@@ -21,14 +22,25 @@ def main(question_files, card_backs):
                 A = lines[i*2+1]
                 assert Q.startswith('Q:'), Q
                 assert A.startswith('A:'), A
-                img = Image.new('RGB', (211, 328), color = (0, 0, 0))
+                scale = 4
+                img = Image.new('RGB', (211*scale, 328*scale), color = (0, 0, 0))
                 d = ImageDraw.Draw(img)
-                WIDTH=25
+                WIDTH=22
                 txt = '\n'.join(textwrap.wrap(Q, width=WIDTH)) + '\n\n' + '\n'.join(textwrap.wrap(A, width=WIDTH))
                 print(txt)
-                d.text((10, 10), txt, font=fnt, fill=(255, 255, 255))
+                d.text((23*scale, 23*scale), txt, font=fnt, fill=(255, 255, 255))
                 img.save('card_fronts/card_{}_front.png'.format(card_number))
-                copyfile(card_back, 'card_backs/card_{}_back.png'.format(card_number))
+
+                back_im=Image.open(card_back)
+                back_im = back_im.resize((211*scale, 328*scale), Image.ANTIALIAS)
+                back_pxs = back_im.load()
+                # print(back_pxs[0, wakka])
+                assert back_pxs[0, wakka] == (0,0,0,255)
+                back_pxs[0, wakka] = (1,1,1,255)
+                wakka += 1
+
+                back_im.save('card_backs/card_{}_back.png'.format(card_number))
+
                 card_number += 1
 
 if __name__ == '__main__':
